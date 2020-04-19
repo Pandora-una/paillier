@@ -42,9 +42,8 @@
             "./vendor/bin/phpunit"
         ],
         "phpunit-ci": [
-            "./vendor/bin/phpunit --testdox",
-            "./vendor/bin/phpunit --coverage-clover build/logs/clover.xml"
-        ],        
+            "./vendor/bin/phpunit --verbose --coverage-text"
+        ],    
 		"test": [
 			"@cs-check",
 			"@phpunit-test"

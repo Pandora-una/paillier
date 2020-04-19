@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+   <ruleset name="Pandora padrao de codigo">
+       <rule ref="./ruleset.xml"/>
+
+       <!-- Paths to check -->
+       <file>src</file>
+   </ruleset>

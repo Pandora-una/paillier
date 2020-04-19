@@ -66,8 +66,8 @@ class Paillier
 
     protected function getGenerator($n, $n2)
     {
-        $alpha = gmp_random_range(gmp_init(0), $n);
-        $beta = gmp_random_range(gmp_init(0), $n);
+        $alpha = gmp_random_range(gmp_init(1), gmp_sub($n, 1));
+        $beta = gmp_random_range(gmp_init(1), gmp_sub($n, 1));
         return gmp_mod(gmp_mul(gmp_add(gmp_mul($alpha, $n), 1), gmp_powm($beta, $n, $n2)), $n2);
     }
 }

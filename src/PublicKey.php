@@ -35,7 +35,7 @@ class PublicKey
     public function encrypt(int $value) : string
     {
         $value = gmp_init($value, 10);
-        $r = gmp_random_range(GMP_init(0), $this->n);
+        $r = gmp_random_range(GMP_init(1), gmp_sub($this->n, 1));
         $n2 = gmp_pow($this->n, 2);
 
         $cript = gmp_mod(gmp_mul(gmp_powm($this->g, $value, $n2), gmp_powm($r, $this->n, $n2)), $n2);

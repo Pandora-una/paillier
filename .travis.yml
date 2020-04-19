@@ -2,7 +2,6 @@ language: php
 script: composer test-ci
 
 php:
-  - 7.2
   - 7.3
   - 7.4
 

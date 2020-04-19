@@ -41,9 +41,17 @@
         "phpunit-test": [
             "./vendor/bin/phpunit"
         ],
+        "phpunit-ci": [
+            "phpunit --testdox",
+            "phpunit --coverage-clover build/logs/clover.xml"
+        ],        
 		"test": [
 			"@cs-check",
 			"@phpunit-test"
+        ],
+        "test-ci": [
+			"@cs-check",
+			"@phpunit-ci"
         ]
     }
 }

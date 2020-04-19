@@ -9,10 +9,7 @@ php:
 before_script:
   - "composer install -v"
 
-after_script:
-  - "phpunit --testdox"
 
 after_script:
-  - "phpunit --testdox"
-  - "phpunit --coverage-clover build/logs/clover.xml"
+  - "composer test-ci"
   - "CODECLIMATE_REPO_TOKEN=0f25cc624257cbdc2f5a89cf12776a18aca88fa9702091320e85cacdfa612fdf ./vendor/bin/test-reporter"

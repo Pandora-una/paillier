@@ -12,4 +12,4 @@ before_script:
 after_script:
   - "/vendor/bin/phpunit --testdox"
   - "/vendor/bin/phpunit --coverage-clover build/logs/clover.xml"
-  - "CODECLIMATE_REPO_TOKEN=0f25cc624257cbdc2f5a89cf12776a18aca88fa9702091320e85cacdfa612fdf ./vendor/bin/test-reporter"
+  - "CODECLIMATE_REPO_TOKEN=054ca06aaad2c4c0e1d57489c83709006f5472fa1c363b94476585adf909148f ./vendor/bin/test-reporter"

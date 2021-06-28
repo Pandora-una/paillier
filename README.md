@@ -60,6 +60,3 @@ $dec = $paillier->getPrivateKey()->decrypt($res);
 
 echo $dec; //= 28
 ```
-
-
-
